@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="/icon.ico" />
+  <title>A I Z E N !</title>
+
+  <!-- Embed Previews -->
+  <meta property="og:image" content="https://media.discordapp.net/attachments/1123082916298227783/1261923122462986340/standard.gif">
+  <meta property="og:site_name" content="Discord: z_zx">
+  <meta property="og:type" content="object">
+  <meta property="og:title" content="Harry Uchiha">
+  <meta property="og:url" content="https://discord.gg/zentirog">
+  <meta property="og:description" content="Last Hope of Soul Society.">
+
+  <meta name="twitter:image:src" content="https://media.discordapp.net/attachments/1123082916298227783/1261923122462986340/standard.gif">
+  <meta name="twitter:site" content="@z_zx">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Harry Uchiha">
+  <meta name="twitter:description" content="Last Hope of Soul Society.">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="aizen.css">
+</head>
+<body>
+   <video id="bg-video" src="obito_amv.mp4" loop muted></video>
+  <audio id="bg-audio" src="obito_amv.mp3" loop muted></audio>
+
+   <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+     <div style="position: absolute; top: 170px; left: 50%; transform: translateX(-50%); z-index: 10;">
+
+    <img src="profil.png" style="width: 200px; height: 200px; border-radius: 50%;">
+
+   </div>
+
+      <h1 class="text-title" style="color: rgb(98, 0, 255);" >Hey, 𝘼 𝙄 𝙕 𝙀 𝙉 ! Is Here [active]</h1>
+      <section class="glowing-icons">
+        <ui class="icon-list">
+          <li> <br> <br> <br> <br>
+            <a
+                href="https://www.instagram.com/sextiles__/" target="_blank">
+            <img src="instagram.png" style="width: 50px;">
+            </a>
+        </li>
+
+          <li> <br> <br> <br> <br>
+            <a
+               href="https://www.youtube.com/@Aizenn-xe" target="_blank">
+               <img src="youtube.png"
+               style="width: 50px;">
+              </a>
+          </li>
+
+         <li> <br> <br> <br> <br>
+            <a href="https://guns.lol/aizen" target="_blank">
+               <img src="newspaper.png" alt="Newspaper Icon" style="width: 50px;">
+            </a>
+         </li>
+        </ul>
+
+         <li> <br> <br> <br> <br>
+            <a href="https://steamcommunity.com/profiles/76561199621316271" target="_blank">
+                <img src="steam.png" style="width: 50px;">
+            </a>
+        </li>
+         <li> <br> <br> <br> <br>
+            <a href="https://guns.lol/aiz" target="_blank">
+               <img src="deagle.png" style="width: 50px;">
+            </a>
+         </li>
+         <li> <br> <br> <br> <br>
+            <a href="https://guns.lol/targ" target="_blank">
+                <img src="Rangbaj.png" style="width: 50px;">
+            </a>
+         </li>
+      </section> <br> <br> <br> <br> <br>
+      <!-- Play Button -->
+<button id="startButton" class="start-btn">
+  <i class="fas fa-play"></i> Start Audio + Video
+</button>
+      <strong> <h5 style="text-align: center;color: rgb(0, 0, 0);"> Zoom out the website into 80 by pressing CTRL and Scrol Down </h5> </strong>
+    <strong> <h4 style="text-align: center;color: rgb(255, 0, 0);">Website Owner A I Z E N ! </h4> </strong>
+    <strong> <h5 style="text-align: center;color: rgb(102, 255, 0);">Website Developer: Farhan</h5> </strong>
+    </div>  
+  </div>  
+  <script src="aizen.js"></script>
+</body>
+
+<script>
+  window.addEventListener('click', () => {
+    const audio = document.getElementById('bg-audio');
+    audio.play();
+  }, { once: true });
+
+  document.getElementById('startButton').addEventListener('click', () => {
+    const video = document.getElementById('bg-video');
+    const audio = document.getElementById('bg-audio');
+
+    try {
+      video.muted = false;
+      video.play();
+      audio.play();
+      document.getElementById('startButton').style.display = 'none'; // hide after clicked
+    } catch (err) {
+      alert('Autoplay blocked! Please interact with the page again.');
+      console.error(err);
+    }
+  });
+</script>
+
+</html>
